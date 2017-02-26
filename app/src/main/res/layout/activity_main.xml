@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="horizontal" >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/players">
+       <LinearLayout
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           android:id="@+id/player1">
+           <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Player1 :"
+           android:textSize="25dp"
+               android:textColor="@android:color/black" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="rolls :"
+               android:textSize="25dp"
+               android:id="@+id/player1bids"
+               android:textColor="@android:color/black"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="played:"
+               android:textSize="25dp"
+               android:id="@+id/player1playing"
+               android:textColor="@android:color/black"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/player1"
+            android:layout_margin="10dp"
+            android:id="@+id/player2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player3 :"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rolls :"
+                android:textSize="25dp"
+                android:id="@+id/player2bids"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="played:"
+                android:textSize="25dp"
+                android:id="@+id/player2playing"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            android:layout_toRightOf="@+id/player1"
+            android:id="@+id/player3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player2 :"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rolls :"
+                android:textSize="25dp"
+                android:id="@+id/player3bids"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="played:"
+                android:textSize="25dp"
+                android:id="@+id/player3playing"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/player3"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/player2"
+            android:id="@+id/player4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player4 :"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rolls :"
+                android:textSize="25dp"
+                android:id="@+id/player4bids"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="played:"
+                android:textSize="25dp"
+                android:id="@+id/player4playing"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/players"
+        android:columnWidth="150dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="0dp"
+        tools:context=".activity.MainActivity"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:id="@+id/cards_grid">
+    </GridView>
+
+
+
+
+
+
+</RelativeLayout>
